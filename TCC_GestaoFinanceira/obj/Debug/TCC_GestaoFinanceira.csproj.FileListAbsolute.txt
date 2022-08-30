@@ -1,0 +1,11 @@
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\bin\Debug\TCC_GestaoFinanceira.exe.config
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\bin\Debug\TCC_GestaoFinanceira.exe
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\bin\Debug\TCC_GestaoFinanceira.pdb
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.csproj.AssemblyReference.cache
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.csproj.SuggestedBindingRedirects.cache
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.Form1.resources
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.Properties.Resources.resources
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.csproj.GenerateResource.cache
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.csproj.CoreCompileInputs.cache
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.exe
+C:\Cursos\POO\TCC_GestaoFinanceira\TCC_GestaoFinanceira\obj\Debug\TCC_GestaoFinanceira.pdb
