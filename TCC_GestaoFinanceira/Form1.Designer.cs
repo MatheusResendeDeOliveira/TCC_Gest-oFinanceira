@@ -36,14 +36,13 @@
             this.lblSalarioBruto = new System.Windows.Forms.Label();
             this.lblSalarioLiquido = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TipoDeGastos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdicionarTipoDeGasto = new System.Windows.Forms.Button();
             this.lblSaldoGuardado = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblDespesasMensais = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoDeMovimentacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -113,7 +112,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Data,
-            this.TipoDeGastos,
+            this.TipoDeMovimentacao,
             this.Valor,
             this.Descricao});
             this.dataGridView1.Location = new System.Drawing.Point(12, 71);
@@ -121,32 +120,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1467, 814);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Data
-            // 
-            this.Data.DividerWidth = 2;
-            this.Data.HeaderText = "Data";
-            this.Data.Name = "Data";
-            this.Data.ReadOnly = true;
-            // 
-            // TipoDeGastos
-            // 
-            this.TipoDeGastos.HeaderText = "Tipo De Gastos";
-            this.TipoDeGastos.Name = "TipoDeGastos";
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "Valor";
-            this.Valor.Name = "Valor";
-            // 
-            // btnAdicionarTipoDeGasto
-            // 
-            this.btnAdicionarTipoDeGasto.Location = new System.Drawing.Point(1363, 9);
-            this.btnAdicionarTipoDeGasto.Name = "btnAdicionarTipoDeGasto";
-            this.btnAdicionarTipoDeGasto.Size = new System.Drawing.Size(116, 36);
-            this.btnAdicionarTipoDeGasto.TabIndex = 9;
-            this.btnAdicionarTipoDeGasto.Text = "Adicionar tipo de gasto";
-            this.btnAdicionarTipoDeGasto.UseVisualStyleBackColor = true;
             // 
             // lblSaldoGuardado
             // 
@@ -190,20 +163,16 @@
             this.Data.HeaderText = "Data";
             this.Data.Name = "Data";
             this.Data.ReadOnly = true;
-            this.Data.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Data.Width = 150;
             // 
             // TipoDeMovimentacao
             // 
             this.TipoDeMovimentacao.HeaderText = "Tipo De Movimentação";
             this.TipoDeMovimentacao.Name = "TipoDeMovimentacao";
-            this.TipoDeMovimentacao.Width = 150;
             // 
             // Valor
             // 
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
-            this.Valor.Width = 150;
             // 
             // Descricao
             // 
@@ -220,7 +189,6 @@
             this.Controls.Add(this.lblDespesasMensais);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblSaldoGuardado);
-            this.Controls.Add(this.btnAdicionarTipoDeGasto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblSalarioLiquido);
             this.Controls.Add(this.lblSalarioBruto);
@@ -245,14 +213,13 @@
         private System.Windows.Forms.Label lblSalarioBruto;
         private System.Windows.Forms.Label lblSalarioLiquido;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnAdicionarTipoDeGasto;
         private System.Windows.Forms.Label lblSaldoGuardado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblDespesasMensais;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.Button btnSalvarSalario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TipoDeGastos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoDeMovimentacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
     }
