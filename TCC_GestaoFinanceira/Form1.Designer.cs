@@ -184,10 +184,32 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Despesas mensais:";
             // 
+            // Data
+            // 
+            this.Data.DividerWidth = 2;
+            this.Data.HeaderText = "Data";
+            this.Data.Name = "Data";
+            this.Data.ReadOnly = true;
+            this.Data.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Data.Width = 150;
+            // 
+            // TipoDeMovimentacao
+            // 
+            this.TipoDeMovimentacao.HeaderText = "Tipo De Movimentação";
+            this.TipoDeMovimentacao.Name = "TipoDeMovimentacao";
+            this.TipoDeMovimentacao.Width = 150;
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            this.Valor.Width = 150;
+            // 
             // Descricao
             // 
             this.Descricao.HeaderText = "Descrição";
             this.Descricao.Name = "Descricao";
+            this.Descricao.Width = 300;
             // 
             // Form1
             // 
