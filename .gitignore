@@ -1,1 +1,42 @@
 .vs/TCC_GestaoFinanceira
+# User-specific files
+ *.suo
+ *.user
+ *.sln.docstates
+ 
+ # Build results
+ # [Dd]ebug/
+ # [Rr]elease/
+ # x64/
+ [Bb]in/
+ [Oo]bj/
+ Release/Publicacao/EMSmart.ETL/*
+ 
+ /Binarios/*
+ !/Binarios/Outros/
+ !/Binarios/Esquemas/
+ !/Binarios/Conversor/
+ 
+ /Binarios/Conversor/*
+ !/Binarios/Conversor/ScriptsAdicionais/
+ /Binarios/Conversor/ScriptsAdicionais/*
+ !/Binarios/Conversor/ScriptsAdicionais/*.sql
+ !/Binarios/Conversor/ScriptsAdicionais/*.gitkeep
+ 
+ # NuGet Packages Directory
+ packages/
+ 
+ # VS
+ .vs/
+ 
+ # Build
+ /Build/Logs/
+ /Build/Setup/
+ /Build/InspectCode/
+ 
+ # Logs
+ erros/
+ logs/
+ 
+ # Windows image file caches
+ Thumbs.db
