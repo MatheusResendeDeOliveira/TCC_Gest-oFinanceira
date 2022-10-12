@@ -22,7 +22,7 @@ namespace TCC_GestaoFinanceira.Mapeador
             return new FbConnection(conn);
         }
 
-        public void acessoFBSingleton()
+        public FbDataAdapter acessoFBSingleton()
         {
             using (FbConnection conexaoFireBird = daoFireBird.getInstancia().getConexao())
             {
@@ -34,13 +34,15 @@ namespace TCC_GestaoFinanceira.Mapeador
 
                     FbCommand cmd = new FbCommand(mSQL, conexaoFireBird);
                     FbDataAdapter da = new FbDataAdapter(cmd);
+                    return da;
 
-                    DataTable dtEmployee = new DataTable();
-                    da.Fill(dtEmployee);
+                    //DataTable dtEmployee = new DataTable();
+                    //da.Fill(dtEmployee);
                 }
                 catch (FbException fbex)
                 {
                     MessageBox.Show("Erro de acesso ao MySQL : " + fbex.Message, "Erro");
+                    return null;
                 }
                 finally
                 {

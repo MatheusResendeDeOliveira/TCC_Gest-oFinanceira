@@ -6,7 +6,7 @@ namespace TCC_GestaoFinanceira
 {
     public partial class Form1 : Form
     {
-        daoFireBird Conexao = new();
+        readonly daoFireBird Conexao = new daoFireBird();
         TratamentoDeCampos _MascaraDinheiro = new TratamentoDeCampos();
 
         public Form1()

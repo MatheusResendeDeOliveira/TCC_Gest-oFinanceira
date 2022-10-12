@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="Mapeador\Conexao.cs" />
     <Compile Include="Mapeador\daoFireBird.cs" />
+    <Compile Include="Movimentacoes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TiposDeMovimentacao.cs" />
