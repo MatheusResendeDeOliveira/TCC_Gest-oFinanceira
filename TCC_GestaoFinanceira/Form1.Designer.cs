@@ -36,14 +36,14 @@
             this.lblSalarioBruto = new System.Windows.Forms.Label();
             this.lblSalarioLiquido = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblSaldoGuardado = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblDespesasMensais = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoDeMovimentacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSaldoGuardado = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblDespesasMensais = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +121,29 @@
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Data
+            // 
+            this.Data.DividerWidth = 2;
+            this.Data.HeaderText = "Data";
+            this.Data.Name = "Data";
+            this.Data.ReadOnly = true;
+            // 
+            // TipoDeMovimentacao
+            // 
+            this.TipoDeMovimentacao.HeaderText = "Tipo De Movimentação";
+            this.TipoDeMovimentacao.Name = "TipoDeMovimentacao";
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            // 
+            // Descricao
+            // 
+            this.Descricao.HeaderText = "Descrição";
+            this.Descricao.Name = "Descricao";
+            this.Descricao.Width = 300;
+            // 
             // lblSaldoGuardado
             // 
             this.lblSaldoGuardado.AutoSize = true;
@@ -157,29 +180,6 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Despesas mensais:";
             // 
-            // Data
-            // 
-            this.Data.DividerWidth = 2;
-            this.Data.HeaderText = "Data";
-            this.Data.Name = "Data";
-            this.Data.ReadOnly = true;
-            // 
-            // TipoDeMovimentacao
-            // 
-            this.TipoDeMovimentacao.HeaderText = "Tipo De Movimentação";
-            this.TipoDeMovimentacao.Name = "TipoDeMovimentacao";
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "Valor";
-            this.Valor.Name = "Valor";
-            // 
-            // Descricao
-            // 
-            this.Descricao.HeaderText = "Descrição";
-            this.Descricao.Name = "Descricao";
-            this.Descricao.Width = 300;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,6 +199,7 @@
             this.Controls.Add(this.btnSalvarSalario);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

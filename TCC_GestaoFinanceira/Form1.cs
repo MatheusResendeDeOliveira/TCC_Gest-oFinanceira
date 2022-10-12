@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TCC_GestaoFinanceira.Mapeador;
 
 namespace TCC_GestaoFinanceira
 {
     public partial class Form1 : Form
     {
+        daoFireBird Conexao = new();
         TratamentoDeCampos _MascaraDinheiro = new TratamentoDeCampos();
 
         public Form1()
@@ -30,12 +25,16 @@ namespace TCC_GestaoFinanceira
             txt.KeyPress += _MascaraDinheiro.ApenasValorNumerico;
         }
 
-        
-
         private void RetornarMascara(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
             txt.Text = double.Parse(txt.Text).ToString("C2");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            Conexao.acessoFBSingleton();
         }
     }
 }
