@@ -15,10 +15,7 @@ namespace TCC_GestaoFinanceira
             AplicarMascara(txtInsiraSalarioBruto);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {}
 
         public void AplicarMascara(TextBox txt)
         {
@@ -33,8 +30,7 @@ namespace TCC_GestaoFinanceira
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            Conexao.acessoFBSingleton();
+            var a = Conexao.acessoFBSingleton();
         }
     }
 }

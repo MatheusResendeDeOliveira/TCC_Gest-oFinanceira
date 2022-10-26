@@ -52,4 +52,3 @@ namespace TCC_GestaoFinanceira.Mapeador
         }
     }
 }
-}
